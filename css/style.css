@@ -1,5 +1,7 @@
 body {
   font-family: Poppins;
+  background-image: url("../img/bg.png");
+  background-size: 100%;
 }
 
 /* Hero section */

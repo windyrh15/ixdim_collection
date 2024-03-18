@@ -27,8 +27,8 @@
       <div class="flex justify-center items-center gap-5 pr-20">
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Produk</a>
-        <a href="#">Kontak</a>
+        <a href="#sec-3">Produk</a>
+        <a href="#sec-kontak">Kontak</a>
       </div>
     </nav>
 
@@ -38,7 +38,7 @@
     >
       <div class="flex gap-5 justify-center items-center pl-20">
         <img src="img/logo.png" alt="" class="w-12" />
-        <h1>IXDIM COLLECTION</h1>
+        <h1 class="hidden sm:hidden md:block">IXDIM COLLECTION</h1>
       </div>
       <div
         class="nav-mobile absolute top-20 left-full bg-gray-100 text-black w-full transition-all ease-linear p-5 flex flex-col gap-5"
@@ -63,13 +63,6 @@
         class="flex flex-col justify-center items-center h-full w-full bg-gradient-to-r from-sky-600 to-white bg-clip-text text-transparent drop-shadow-2xl"
       >
         <img src="img/logo-w-frame.png" alt="IXDIM-LOGO" />
-        <!-- <p
-          id="hero-text"
-          class="lg:w-1/2 lg:text-lg w-9/12 text-md text-center pb-8"
-        >
-          Melayani pembuatan seragam berupa kaos, kemeja, rompi, jaket, topi,
-          celana, apron, dan berbagai produk lainnya.
-        </p> -->
         <p
           id="hero-text"
           class="lg:w-1/2 lg:text-2xl w-9/12 text-md text-center pb-8"
@@ -77,7 +70,7 @@
           <span id="typed-text"></span><span id="cursor">|</span>
         </p>
         <a
-          href=""
+          href="#sec-2"
           class="animate hero-button bg-sky-900 text-white text-2xl p-3 rounded-sm ease-in ease-in-out duration-300 border-2 border-sky-400 text-medium text-sky-900 hover:bg-white hover:text-sky-900"
         >
           Selengkapnya
@@ -89,59 +82,59 @@
     <!-- Slider Start -->
     <section class="sec-7 container mx-auto p-5">
       <div
-        class="flex flex-col justify-center items-center w-[50rem] mx-auto rounded-tl-lg rounded-tr-lg"
+        class="flex flex-col justify-center items-center mx-auto rounded-tl-lg rounded-tr-lg"
       >
         <img
-          class="mySlides w-full h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
+          class="mySlides w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[45rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
           src="img/slider/slide-1.PNG"
         />
         <img
-          class="mySlides w-full h-[45rem] rounded-tl-lg rounded-tr-lg"
+          class="mySlides w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[45rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] rounded-tl-lg rounded-tr-lg"
           src="img/slider/slide-2.PNG"
         />
         <img
-          class="mySlides w-full h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
+          class="mySlides w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[45rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
           src="img/slider/slide-3.PNG"
         />
         <img
-          class="mySlides w-full h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
+          class="mySlides w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[45rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
           src="img/slider/slide-4.PNG"
         />
         <img
-          class="mySlides w-full h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
+          class="mySlides w-full sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[45rem] sm:h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] rounded-tl-lg rounded-tr-lg hidden"
           src="img/slider/slide-5.PNG"
         />
 
-        <div class="row-padding flex">
-          <div class="w3-col s4">
+        <div class="row-padding flex justify-center items-center gap-12 py-5">
+          <div class="w-1/4 sm:w-1/6">
             <img
               class="demo w-full cursor-pointer"
               src="img/slider/slide-1.PNG"
               onclick="currentDiv(1)"
             />
           </div>
-          <div class="w3-col s4">
+          <div class="w-1/4 sm:w-1/6">
             <img
               class="demo w-full cursor-pointer"
               src="img/slider/slide-2.PNG"
               onclick="currentDiv(2)"
             />
           </div>
-          <div class="w3-col s4">
+          <div class="w-1/4 sm:w-1/6">
             <img
               class="demo w-full cursor-pointer"
               src="img/slider/slide-3.PNG"
               onclick="currentDiv(3)"
             />
           </div>
-          <div class="w3-col s4">
+          <div class="w-1/4 sm:w-1/6">
             <img
               class="demo w-full cursor-pointer"
               src="img/slider/slide-4.PNG"
               onclick="currentDiv(4)"
             />
           </div>
-          <div class="w3-col s4">
+          <div class="w-1/4 sm:w-1/6">
             <img
               class="demo w-full cursor-pointer"
               src="img/slider/slide-5.PNG"
@@ -151,13 +144,14 @@
         </div>
       </div>
     </section>
+
     <!-- Slider End -->
 
     <!-- Pelayanan / Service Start -->
     <section
       class="sec-2 pt-10 flex flex-col justify-center items-center gap-12 border-b-2 pb-20 bg-gray-100"
     >
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center" id="sec-2">
         <h1 class="animate text-4xl font-medium">Mengapa memilih kami ?</h1>
         <div class="w-20 h-1 bg-black mt-8"></div>
       </div>
@@ -253,7 +247,10 @@
     <!-- Pelayanan / Service Start -->
 
     <!-- Product Start -->
-    <section class="sec-3 flex flex-col justify-center items-center py-16">
+    <section
+      class="sec-3 flex flex-col justify-center items-center py-10 lg:py-16 bg-gray-200"
+      id="sec-3"
+    >
       <h1 class="animate text-4xl font-mediu text-center">
         Kami melayani pembuatan berbagai jenis seragam
       </h1>
@@ -271,7 +268,8 @@
             class="w-full rounded-lg transition-transform duration-300 transform hover:scale-105"
           />
           <a
-            href=""
+            href="jacket.html"
+            target="_blank"
             class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2"
           >
             Jaket
@@ -284,7 +282,8 @@
             class="w-full rounded-lg transition-transform duration-300 transform hover:scale-105"
           />
           <a
-            href=""
+            href="kaos.html"
+            target="_blank"
             class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2"
           >
             Kaos
@@ -297,7 +296,8 @@
             class="w-full rounded-lg transition-transform duration-300 transform hover:scale-105"
           />
           <a
-            href=""
+            href="kemeja.html"
+            target="_blank"
             class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2"
           >
             Kemeja
@@ -310,7 +310,8 @@
             class="w-full rounded-lg transition-transform duration-300 transform hover:scale-105"
           />
           <a
-            href=""
+            href="rompi.html"
+            target="_blank"
             class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-2"
           >
             Rompi
@@ -318,17 +319,19 @@
         </div>
       </div>
       <a
-        href=""
+        href="product.html"
+        target="_blank"
         class="w-40 h-12 mt-10 mb-10 bg-gray-400 shadow-lg transition ease-linear duration-200 hover:bg-gray-200 flex justify-center items-center rounded-md text-white"
       >
         Lebih banyak lagi
       </a>
     </section>
+
     <!-- Product End -->
 
     <!-- Testimoni Start -->
     <section
-      class="sec-4 p-8 flex flex-col justify-center items-center bg-sky-800 mt-20"
+      class="sec-4 p-8 flex flex-col justify-center items-center bg-sky-800"
     >
       <h2 class="animate font-semibol text-4xl text-white mb-4">Testimoni</h2>
       <p class="animate text-center mb-10 text-white">
@@ -606,7 +609,7 @@
     <!-- Testimoni End -->
 
     <!-- Kontak Start -->
-    <section class="kontak">
+    <section class="kontak" id="sec-kontak">
       <div class="container mx-auto py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div class="relative">
@@ -691,12 +694,60 @@
     </section>
     <!-- Kontak End -->
 
+    <!-- Klien Start -->
+    <section class="klien m-5 lg:m-32 p-10 bg-gray-200">
+      <h2 class="text-center text-4xl font-semibold pb-8">Klien Kami</h2>
+      <div class="klien-img flex justify-center items-center gap-8 flex-wrap">
+        <img src="img/logo-klien/bsi.png" alt="" class="w-72 h-64" />
+        <img src="img/logo-klien/FKS_Food_logo.png" alt="" class="w-72 h-64" />
+        <img
+          src="img/logo-klien/Honda-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img
+          src="img/logo-klien/Institut_pertanian_bogor-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img
+          src="img/logo-klien/Kawasaki-Symbol.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img
+          src="img/logo-klien/Mie_kremez-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img
+          src="img/logo-klien/Suzuky-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img src="img/logo-klien/taro.png" alt="" class="w-72 h-64" />
+        <img src="img/logo-klien/telkomsel_Logo.png" alt="" class="w-72 h-56" />
+        <img
+          src="img/logo-klien/Uni_pembangunan_jakarta-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+        <img
+          src="img/logo-klien/Yamaha-Photoroom.png-Photoroom.png"
+          alt=""
+          class="w-72 h-64"
+        />
+      </div>
+    </section>
+
+    <!-- Klien End -->
+
     <!-- Follow US Start -->
     <section
       class="sec-6 follow flex flex-col justify-center items-center py-16"
     >
-      <div class="flex justify-center items-center gap-12">
-        <h2 class="text-4xl font-semibold whitespace-nowrap">
+      <div class="flex justify-center items-center flex-wrap gap-12">
+        <h2 class="text-4xl font-semibold text-center lg:text-left">
           Follow us on Instagram
         </h2>
       </div>
@@ -733,25 +784,19 @@
     </section>
 
     <!-- Follow US End -->
-
     <footer
-      class="flex flex-col lg:flex-row items-center justify-center gap-4 bg-gray-800 text-white h-32 px-20"
+      class="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4 bg-gray-800 text-white h-32 px-6 lg:px-20"
     >
-      <div class="items-center w-96 hidden lg:flex">
+      <div
+        class="hidden items-center justify-center lg:flex lg:justify-start lg:w-96"
+      >
         <img src="img/logo.png" alt="IXDIM Logo" class="w-12" />
         <h1 class="text-lg font-semibold ml-4">IXDIM COLLECTION</h1>
       </div>
-
-      <div class="flex justify-center w-full pl-30">
-        <div class="menu flex gap-5">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Portfolio</a>
-          <a href="">Blog</a>
-          <a href="">Kontak</a>
-        </div>
-      </div>
-      <p class="text-sm lg:w-96">Copyright © 2024 IXDIM COLLECTION</p>
+      <p class="text-sm lg:w-auto text-center lg:text-left">
+        Copyright © 2024 IXDIM COLLECTION
+      </p>
+      <a href="#" class="underline hidden lg:inline-block">Back to top</a>
     </footer>
 
     <script src="js/script.js"></script>
