@@ -4,6 +4,36 @@ body {
   background-size: 100%;
 }
 
+nav {
+  transition: left 0.3s ease; /* Menambahkan transisi pada perubahan posisi */
+}
+
+.nav-menu-d a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #ffff;
+  transition: width 0.3s;
+}
+
+.nav-menu-d a:hover::after {
+  width: 100%;
+}
+
+.nav-menu-m a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.nav-menu-m a:hover::after {
+  width: 100%;
+}
+
 /* Hero section */
 .hero {
   background: linear-gradient(132deg, #1dacd3, #154473, #23a1c6);
