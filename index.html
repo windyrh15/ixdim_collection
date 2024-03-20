@@ -695,9 +695,14 @@
     <!-- Kontak End -->
 
     <!-- Klien Start -->
-    <section class="klien m-5 lg:m-32 p-10 bg-gray-200">
-      <h2 class="text-center text-4xl font-semibold pb-8">Klien Kami</h2>
-      <div class="klien-img flex justify-center items-center gap-8 flex-wrap">
+    <section class="klien m-5 lg:m-32 p-10">
+      <h2 class="text-center text-4xl font-semibold pb-8 underline">
+        Klien Kami
+      </h2>
+      <div
+        id="klien-slider"
+        class="klien-img flex justify-center items-center gap-8 flex-wrap"
+      >
         <img src="img/logo-klien/bsi.png" alt="" class="w-72 h-64" />
         <img src="img/logo-klien/FKS_Food_logo.png" alt="" class="w-72 h-64" />
         <img
@@ -718,24 +723,32 @@
         <img
           src="img/logo-klien/Mie_kremez-Photoroom.png-Photoroom.png"
           alt=""
-          class="w-72 h-64"
+          class="w-72 h-64 hidden md:inline"
         />
         <img
           src="img/logo-klien/Suzuky-Photoroom.png-Photoroom.png"
           alt=""
-          class="w-72 h-64"
+          class="w-72 h-64 hidden md:inline"
         />
-        <img src="img/logo-klien/taro.png" alt="" class="w-72 h-64" />
-        <img src="img/logo-klien/telkomsel_Logo.png" alt="" class="w-72 h-56" />
+        <img
+          src="img/logo-klien/taro.png"
+          alt=""
+          class="w-72 h-64 hidden md:inline"
+        />
+        <img
+          src="img/logo-klien/telkomsel_Logo.png"
+          alt=""
+          class="w-72 h-56 hidden md:inline"
+        />
         <img
           src="img/logo-klien/Uni_pembangunan_jakarta-Photoroom.png-Photoroom.png"
           alt=""
-          class="w-72 h-64"
+          class="w-72 h-64 hidden md:inline"
         />
         <img
           src="img/logo-klien/Yamaha-Photoroom.png-Photoroom.png"
           alt=""
-          class="w-72 h-64"
+          class="w-72 h-64 hidden md:inline"
         />
       </div>
     </section>
@@ -793,7 +806,6 @@
       </p>
       <a href="#" class="underline hidden lg:inline-block">Back to top</a>
     </footer>
-
     <script src="js/script.js"></script>
     <script>
       feather.replace();

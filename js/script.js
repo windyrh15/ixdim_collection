@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, newTextDelay);
 });
 
-// ----------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 
 // Animasi in/out
 const sections = document.querySelectorAll("section");
